@@ -1,0 +1,14 @@
+<script type="module">
+    import { createApp } from '../dist/petite-vue.es.js'
+  
+    createApp({
+      print(){
+        console.log('aaa')
+
+      }
+    }
+    ).mount('#app')
+  </script>
+  <div id="app">
+    <button @click="print()"></button>
+  </div>

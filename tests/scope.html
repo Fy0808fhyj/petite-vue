@@ -1,10 +1,10 @@
 <script type="module">
-  import { createApp } from '../src'
+  import { createApp } from '../dist/petite-vue.es.js'
   createApp().mount()
 </script>
 
 <div v-scope="{ msg: 'one' }">
-  {{ msg }} <button @click="msg = 1">Change one</button>
+  {{ msg }} <button @click="msg=1">Change one</button>
 </div>
 
 <div v-scope="{ msg: 'two', outer: 'outer' }">
